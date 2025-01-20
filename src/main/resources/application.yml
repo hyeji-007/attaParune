@@ -1,0 +1,31 @@
+mybatis:
+  mapper-locations : mappers/**/*.xml
+
+file:
+  directory: D:/SGSG/download/mandalart
+
+#???? ?? ???
+const:
+  default-page-size: 20
+
+spring:
+  config:
+    import: "classpath:application-secret.yml"
+
+  #File ??? ??
+  servlet:
+    multipart:
+      max-file-size: 50MB
+
+
+#Swagger ??
+springdoc:
+  swagger-ui:
+    default-model-expand-depth: 10
+    display-request-duration: true
+    groups-order: asc
+    operations-sorter: method
+    path: /swagger
+    tags-sorter: alpha
+  cache:
+    disabled: true
