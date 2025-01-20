@@ -2,7 +2,7 @@ mybatis:
   mapper-locations : mappers/**/*.xml
 
 file:
-  directory: D:/SGSG/download/mandalart
+  directory: D:/KWJ/download/greengram_ver3
 
 #???? ?? ???
 const:
