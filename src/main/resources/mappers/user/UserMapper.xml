@@ -5,4 +5,14 @@
     <insert id="insUser">
 
     </insert>
+
+    <select id="selUserByUid">
+        SELECT user_id AS userId
+        , company_id AS companyId
+        , role_id AS roleId
+        , uid, upw, name, pic
+        , email, phone, point
+        FROM user
+        WHERE uid = #{uid}
+    </select>
 </mapper>
